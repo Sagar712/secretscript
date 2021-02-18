@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel="manifest" href="./manifest.json"/>
+    <title>Storage</title>
+</head>
+<body>
+    <div class="bodycontainer">
+        <div class="header">
+            <div class="logo">
+                <span id="heading" onclick="scriptmath()"><i class="fas fa-mask"></i>  Secret Sript</span>
+            </div>
+            <div class="inck">
+                <i class="fas fa-bars" id="changeicon"></i>
+            </div>
+
+            <div class="dropdown">
+                <ul class="options">
+                    <li class="menu_item" onclick="location.href='./index.html'">
+                        <button  class="navbar_links">App</button>
+                    </li>
+                    <li class="menu_item" onclick="location.href='./Contact.html'">
+                        <button  class="navbar_links">Contact</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="adjuster"></div>
+        <div class="overlay" onclick="overlayhandle()"></div>
+
+        <div class="container1">
+      
+            <div class="heaader">Storage Book</div>
+            <div class="storage">
+                Input-
+              <input type="text" id="namedata" />
+              <div class="allbtns">
+                <button onclick="inputData()">Add to storage</button>
+                <button onclick="deleteData()">Delete all</button>
+              </div>
+            </div>
+         
+    
+            <legend>Storage</legend>
+            <div id="outp">
+              <p id="outpara"></p>
+            </div>
+          
+        </div>
+    </div>
+
+    
+
+    <script src="./storage.js"></script>
+</body>
+</html>

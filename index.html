@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel="manifest" href="./manifest.json"/>
+    <title>Main App</title>
+</head>
+<body>
+    <div class="bodycontainer">
+        <div class="header">
+            <div class="logo">
+                <span id="heading" onclick="scriptmath()"><i class="fas fa-mask"></i>  Secret Sript</span>
+            </div>
+            <div class="inck">
+                <i class="fas fa-bars" id="changeicon"></i>
+            </div>
+
+            <div class="dropdown">
+                <ul class="options">
+                    <li class="menu_item" onclick="location.href='./Storage.html'">
+                        <button  class="navbar_links">Storage</button>
+                    </li>
+                    <li class="menu_item" onclick="location.href='./Contact.html'">
+                        <button  class="navbar_links">Contact</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="overlay" onclick="overlayhandle()"></div>
+
+        <div class="container">
+            <div class="innerap">
+                <span style="font-weight: bold;">Encryption App<br/><hr/></span>
+                <br/>
+                <button id="buttReset" onclick="reset()">Reset</button>
+                <form onsubmit="return false">
+                    
+                    <br/>
+                    <label for="keyy"><i class="fas fa-key"></i> </label>
+                     <input type="text" name="key" id="keyy" placeholder="enter key" autocomplete="off"  /><br/><br/>
+                     <label for="keyy2"><i class="fas fa-comment-alt"></i> </label> <input type="text" name="msg" placeholder="enter message" id="keyy2" autocomplete="off"/>
+                     <br/><br/>
+                    <button type="submit" id="butt" onclick="encrypt()">Encrypt</button>
+                    <button type="submit" id="butt" onclick="decrypt()">Decrypt</button>
+                    <br/><br/>
+                    <p id="crypted">
+                    
+                    </p>
+                    <br/><br/>
+                    
+                </form>
+                <p id="encryted">
+                    
+                </p>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
